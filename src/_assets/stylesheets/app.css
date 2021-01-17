@@ -9,49 +9,55 @@
     outline-offset: 4px;
 }
 
+h1, h2 {
+	@apply font-dancing;
+}
+
+.content-header {
+	@apply text-5xl;
+	@apply font-bold; 
+	@apply text-center;
+	@apply mb-4;
+}
+
+.nav-header, footer {
+	background-color: #0e74b2;
+}
+#nav-content a{
+	@apply inline-block;
+	@apply text-white; 
+	@apply no-underline;
+	@apply py-2; 
+	@apply px-4;
+}
+#nav-content a:hover {
+	color: #c39738;
+	text-decoration: underline;
+}
 a {
-	@apply text-ws-blue-500 underline;
+	@apply text-ws-blue-500;
+	@apply underline;
 }
 
-.rocket {
-	animation: rocket 0.7s linear infinite both;
+.content-wrapper {
+	@apply max-w-2xl;
+	@apply m-auto;
+	@apply pb-20;
 }
 
-@keyframes rocket {
-	0% {
-		transform: translate(0);
-		transform: rotate(0);
-	}
-	10% {
-		transform: translate(-1px, -1px);
-	}
-	20% {
-		transform: translate(1px, -1px);
-	}
-	30% {
-		transform: translate(-1px, 1px);
-	}
-	40% {
-		transform: translate(1px, 1px);
-	}
-	50% {
-		transform: translate(-1px, -1px);
-	}
-	60% {
-		transform: translate(1px, -1px);
-	}
-	70% {
-		transform: translate(-1px, 1px);
-	}
-	80% {
-		transform: translate(-2px, -2px);
-	}
-	90% {
-		transform: translate(2px, -2px);
-	}
-	100% {
-		transform: translate(0);
-	}
+.testimonial {
+	@apply my-10;
 }
+.testimonial h3{ 
+	@apply font-dancing;
+	@apply text-3xl;
+	@apply mb-3;
+}
+.testimonial p {
+	border-left: 3px solid #c39738;
+	padding-left: 10px;
+	@apply text-lg;
+}
+
 
 /* purgecss end ignore */

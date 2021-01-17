@@ -1,5 +1,9 @@
 module.exports = {
   theme: {
+    // Some useful comment
+    fontFamily: {
+      'dancing': ['"Dancing Script"', 'cursive'] // Ensure fonts with spaces have " " surrounding it.
+    },
     extend: {
       colors: {
         'ws-blue': {
@@ -13,6 +17,9 @@ module.exports = {
           800: '#003072',
           900: '#00204C',
         },
+        'gold': {
+          100: '#c39738',
+        }
       }
     },
   },

@@ -1,25 +1,91 @@
 ---
 layout: base.njk
-title: Minimal boilerplate for new projects built with Eleventy, Tailwind and PostCSS
+title: Jackie Langley – Voice Teacher and Music Director
 ---
 
-<main id="main" class="px-4 max-w-md mx-auto text-center">
-    <img src="/static/icon.svg" alt="Rocket icon" class="w-12 mx-auto my-4 rocket">
-    <h1 class="font-bold text-xl mb-2">JAMStack Web Starter <span class="font-light text-gray-500">v{{ pkg.version }}</span></h1>
-    <p>Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS</p>
+<main id="main" class="px-4 max-w-5xl mx-auto rounded shadow-lg">
+    <div class="content-wrapper max-w-2xl m-auto">
+    <div class="header-wrapper flex justify-center items-center flex-col mb-4">
+        <h1 class="text-5xl font-bold text-center">Voice and Music Lessons</h1>
+        <p class="subtitle text-center text-lg">
+            Teaching singing, music theory, and vocal performance. 
+            Prepare for auditions, college applications, or upcoming 
+            theatre productions.
+        </p>
+        <hr class="divider divide-solid">
+    </div>
+    <p>Voice lessons offered in Newtown Square, PA, conveniently located to both Route 1 and the Blue Route.  Lessons are affordable in price for students beginning at middle-school age, through high-school, college, and adults.  All lessons are 1 hour in length.  Students will receive vocal musical theater technique and training in preparation for auditions, current productions, and general vocal development.</p>
 
-    <ul class="md:flex my-4">
-        <li class="md:flex-auto p-2">
-            <a href="https://github.com/scottishstoater/jamstack-web-starter/zipball/master/" class="block no-underline leading-tight p-3 font-bold border-2 border-ws-blue-600 bg-ws-blue-500 text-white rounded hover:bg-ws-blue-600">Download</a>
-        </li>
-        <li class="md:flex-auto p-2">
-            <a href="https://github.com/scottishstoater/jamstack-web-starter#features" class="block no-underline text-black leading-tight p-3 font-bold border-2 rounded hover:bg-gray-100">Get started</a>
-        </li>
-    </ul>
+    
+    
 
-    <footer class="text-sm text-gray-500">
-       <p class="flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 mr-1"><path class="fill-current text-gray-100" d="M32 5H4C1.791 5 0 6.791 0 9v18c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V9c0-2.209-1.791-4-4-4z"/><path class="fill-current text-ws-blue-500" d="M13 18S0 8.586 0 8.895v18.21C0 27.414 13 18 13 18zm5 3S3.697 31 4.07 31h27.859C32.303 31 18 21 18 21zm5-3s13 9.414 13 9.105V8.895C36 8.586 23 18 23 18zm-5-3S3.697 5 4.07 5h27.859C32.303 5 18 15 18 15z"/></svg> <span>Proudly crafted in Scotland by <a href="https://www.chriscollins.me">Chris Collins</a></span></p>
-        <p>Go and build something great! 🥳</p>
-    </footer>
+    
+    <div class="teacher-row flex container flex-col md:flex-row justify-center mt-10">
+        <div class="max-w-lg">
+            <img src="/static/jackie.jpg" alt="Jackie Langley" class="mx-auto pr-5">
+        </div>
+   		<div class="max-w-md">
+      		<h2 class="font-bold text-center text-2xl">About Jackie</h2>
+            <p class="">Jackie Langley earned her M.M. in Music Education with a Concentration in Music Technology at West Chester University and a combined B.M degree in Instrumental &amp; General/Vocal Education from The Catholic University of America.&nbsp; She has taught choral music for almost 2 decades in Maryland and Pennsylvania. Currently Jackie is the Choral Director at Haverford Middle School where she was honored in 2016 as a Quarter Finalist for the Grammy Foundation’s Music Educator Award. Jackie has Music Directed productions at many schools and theaters including Upper Darby Performing Arts Center's Summer Stage, The Players Club of Swarthmore, Westland Middle School, Thomas S. Wootton High School, Haverford High School, Haverford Middle School, and Manoa Elementary School. Over the past 20 years Jackie has also performed in many theatrical productions and has been casted in many memorable roles such as Alice Beane (<em>Titanic</em>), Golde (<em>Fiddler on the Roof</em>), and Alice Miller (<em>My Favorite Year</em>). As a teacher and performer Jackie provides an opportunity to share her knowledge of musical theater and performance techniques for her students to utilize in voice lessons, auditions, or on the stage.</p>
+        </div>
+    </div>
+
+    <h2 class="text-4xl text-center mt-20">Become a Student</h2>
+    <div class="contact-row container flex">
+        <div class="w-full sm:w-1/2 mr-5">
+            
+            <p>Fill out our contact form to set up your first lesson, or reach out to us at perfectfifthstudios@gmail.com</p>
+            <p class="mt-10">Lessons are offered in Newtown Square, PA, conveniently located for students in Havertown, Drexel Hill, Delaware County, and Philadelphia's Main Line</p>
+        </div>
+        <form class="email-form w-full max-w-lg sm:w-1/2 mr-5"  name="becomeastudent" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <div hidden aria-hidden="true">
+                <label>
+                Don’t fill this out if you're human: 
+                <input name="bot-field" />
+                </label>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="contact-name">
+                        Name
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="contact-name" type="text" placeholder="Name">
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="contact-phone">
+                    Phone Number
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="contact-phone" type="text">
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="contact-email">
+                    E-mail
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email">
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="contact-message">
+                    Message
+                </label>
+                <textarea class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="contact-message"></textarea>
+                </div>
+            </div>
+            <div class="md:flex md:items-center">
+                <div class="md:w-1/3">
+                <button class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+                    Send
+                </button>
+                </div>
+                <div class="md:w-2/3"></div>
+            </div>
+        </form>
+    </div>
+
+    </div>
 </main>
