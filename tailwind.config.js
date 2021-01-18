@@ -2,6 +2,7 @@ module.exports = {
   theme: {
     // Some useful comment
     fontFamily: {
+      'notica': ['"Noticia Text"', 'serif'],
       'dancing': ['"Dancing Script"', 'cursive'] // Ensure fonts with spaces have " " surrounding it.
     },
     extend: {
