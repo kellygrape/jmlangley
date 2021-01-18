@@ -13,17 +13,23 @@ body {
 	line-height: 1.8;
 }
 
+/* Text things */
 h1, h2 {
 	@apply font-dancing;
 }
-
 .content-header {
 	@apply text-5xl;
 	@apply font-bold; 
 	@apply text-center;
 	@apply mb-4;
 }
+a {
+	@apply text-ws-blue-500;
+	@apply underline;
+}
 
+
+/* Layouty things */
 .nav-header, footer {
 	background-color: #0e74b2;
 }
@@ -38,15 +44,24 @@ h1, h2 {
 	color: #c39738;
 	text-decoration: underline;
 }
-a {
-	@apply text-ws-blue-500;
-	@apply underline;
+
+#main {
+	@apply px-4;
+	@apply max-w-5xl;
+	@apply mx-auto;
+	@apply rounded-sm;
+	@apply shadow-lg;
 }
 
 .content-wrapper {
 	@apply max-w-2xl;
 	@apply m-auto;
 	@apply pb-20;
+}
+
+.header-wrapper {
+	@apply mb-5;
+	@apply pb-5;
 }
 
 .testimonial {

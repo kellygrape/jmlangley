@@ -1,11 +1,7 @@
 module.exports = {
-  "title": "Web Starter",
-  "description": "Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS",
-  "url": "https://webstarter.chriscollins.me",
-  "author": "Chris Collins",
-  "meta_data": {
-    "twitter": "@scottishstoater",
-    "default_social_image": "/static/default_social_image.jpg"
-  },
+  "title": "Jackie Langley Voice Studio",
+  "description": "Vocal and Music direction in Newtown Square, PA.  Serving the greater Philadelphia area.",
+  "url": "https://www.jmlangley.com",
+  "author": "Jackie Langley",
   "env": process.env.ELEVENTY_ENV === 'production'
 }
